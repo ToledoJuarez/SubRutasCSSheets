@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const nuevoInputGrupo = document.createElement('div');
         nuevoInputGrupo.classList.add('poste-input-group');
         nuevoInputGrupo.innerHTML = `
-            <input type="text" class="poste" placeholder="Número de poste" required>
+            <input type="number" class="poste" placeholder="Número de poste" required>
             <button type="button" class="eliminar-poste eliminar">Eliminar</button>
         `;
         postesInputsDiv.appendChild(nuevoInputGrupo);
@@ -244,7 +244,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const nuevoInputGrupo = document.createElement('div');
         nuevoInputGrupo.classList.add('poste-input-group');
         nuevoInputGrupo.innerHTML = `
-            <input type="text" class="poste" value="${valor}" placeholder="Número de poste">
+            <input type="number" class="poste" value="${valor}" placeholder="Número de poste">
             <button type="button" class="eliminar-poste eliminar">Eliminar</button>
         `;
         postesInputsDiv.appendChild(nuevoInputGrupo);
