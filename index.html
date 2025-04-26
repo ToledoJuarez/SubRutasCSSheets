@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>Formulario de SubRutas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="form-section">
+            <div class="formulario">
+                <h2>Ingresar/Editar SubRutas</h2>
+                <label for="desperfecto">Desperfecto:</label>
+                <input type="text" id="desperfecto" placeholder="Poda" required>
+
+                <label for="detalle">Detalle de Desperfecto:</label>
+                <textarea id="detalle" rows="4" placeholder="Detalle Poda" required></textarea>
+				
+				<label for="nu">N/U</label>
+				<input type="text" id="nu">
+				
+				<label for="tipoArbol">Tipo de Arbol</label>
+				<input type="text" id="tipoArbol">
+					
+				<label for="fase">Fase</label>
+				<input type="text" id="fase">
+				
+                <div id="contenedor-postes">
+                    <label>Postes:</label>
+                    <div id="postes-inputs"></div>
+                    <button type="button" id="agregar-poste">Agregar Poste</button>
+                </div>
+				
+                <button type="button" id="enviar-desperfecto" class="guardar">Guardar SubRuta</button>
+            </div>
+
+            <div class="contenedor-tablas">
+                <div class="lista-desperfectos">
+                    <h2>Lista de SubRutas</h2>
+                    <table id="tabla-lista-desperfectos">
+                        <thead>
+                            <tr>
+                                <th>SubRuta</th>
+                                <th>Desperfecto</th>
+                                <th>Fecha</th>
+                                <th>Acción</th>
+                            </tr>
+                        </thead>
+                        <tbody></tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <div class="detalle-section">
+            <div class="tabla-desperfectos">
+                <h2>Detalle de SubRutas</h2>
+                <table id="tabla-detalle-desperfectos">
+                    <thead>
+                        <tr>
+                            <th>SubRuta</th>
+                            <th>Desperfecto</th>
+                            <th>Detalle</th>
+                            <th>Poste</th>
+                            <th>Fecha</th>
+							<th>N/U</th>
+							<th>Tipo de Arbol</th>
+							<th>Fase</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+                <div class="botones-tabla">
+                    <button type="button" id="exportar-csv">Exportar a CSV local</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
